@@ -25,3 +25,9 @@ Welcome to the Brain Games!
 - [x] В `package.json` добавлены скрипты `build`, `prepublishOnly`
 - [x] В `package.json` добавлен бинарник `brain-games`
 - [x] Пакет [опубликован](https://www.npmjs.com/package/hexlet_brain_games_installero)
+
+#### Часть 2
+
+- [x] Установлен пакет `readline-sync`
+- [x] Добавлен `src/index.js` с функцией `brainGames`
+- [x] В `bin/brain-games.js` добавлен импорт и вызов функции
