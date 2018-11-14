@@ -21,6 +21,8 @@ $ brain-games
 Welcome to the Brain Games!
 ```
 
+[![asciicast](https://asciinema.org/a/Bk7QsuG8CG58LlO4q9oD1g7B9.svg)](https://asciinema.org/a/Bk7QsuG8CG58LlO4q9oD1g7B9)
+
 #### Часть 1
 
 - [x] Makefile с командами `install`, `start`, `publish`
@@ -46,3 +48,9 @@ Welcome to the Brain Games!
 - [x] vim настроен на работу в eslint
 - [x] Добавлен `.travis.yml`
 - [x] Добавлены бэджики Travis CI и Code Climate
+
+#### Часть 4
+
+- [x] Добавлена игра Brain Even
+- [x] В `README.md` добавлена аскинема с примером игры
+- [x] Новая версия пакета [опубликована](https://www.npmjs.com/package/hexlet_brain_games_installero/v/1.0.1)
