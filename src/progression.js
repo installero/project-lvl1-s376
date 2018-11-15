@@ -1,8 +1,8 @@
 import { cons, car, cdr } from 'hexlet-pairs';
 
-const makeProgression = (start, difference, count, position) => {
-  return cons(cons(start, difference), cons(count, position));
-};
+const makeProgression = (start, difference, count, position) => (
+  cons(cons(start, difference), cons(count, position))
+);
 
 const getStart = prog => car(car(prog));
 const getDifference = prog => cdr(car(prog));
