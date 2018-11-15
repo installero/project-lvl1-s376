@@ -20,7 +20,8 @@ npm install -g hexlet_brain_games_installero
 $ brain-games
 Welcome to the Brain Games!
 ```
-[![asciicast](https://asciinema.org/a/a8FHvxBcb9HdTCDdOuOVtBM7D.svg)](https://asciinema.org/a/a8FHvxBcb9HdTCDdOuOVtBM7D)
+
+[![asciicast](https://asciinema.org/a/Z4ruvujhoGwCf9VO0BvxbQ9WX.svg)](https://asciinema.org/a/Z4ruvujhoGwCf9VO0BvxbQ9WX)
 
 #### Часть 1
 
@@ -59,3 +60,8 @@ Welcome to the Brain Games!
 - [x] Логика игры выделена в отдельный файл games/brainEven
 - [x] Добавлена игра brainCalc
 - [x] Новая версия пакета [опубликована](https://www.npmjs.com/package/hexlet_brain_games_installero/v/1.0.2)
+
+#### Часть 6
+
+- [x] Добавлена игра brainGcd
+- [x] Новая версия пакета [опубликована](https://www.npmjs.com/package/hexlet_brain_games_installero/v/1.0.4)
