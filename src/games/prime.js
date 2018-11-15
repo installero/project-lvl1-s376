@@ -8,7 +8,7 @@ const minNumber = 1;
 const maxNumber = 1000;
 
 const isPrime = (n) => {
-  if (n <= 0) {
+  if (n <= 1) {
     return false;
   }
 
