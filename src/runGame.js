@@ -10,7 +10,7 @@ const runGame = (game) => {
   console.log(`Hello, ${name}!`);
   console.log();
 
-  console.log(game.rules);
+  console.log(game.description);
 
   for (let i = 0; i < roundsCount; i += 1) {
     const round = game.makeRound();

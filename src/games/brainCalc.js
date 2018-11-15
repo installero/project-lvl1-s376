@@ -1,39 +1,25 @@
 import { cons, car, cdr } from 'hexlet-pairs';
+import { randNumber } from '../utils';
 
-const rules = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const minNumber = 1;
 const maxNumber = 100;
 
-const randNumber = (n, m) => Math.floor(Math.random() * (m - n + 1) + n);
+const makeOperation = (symbol, fun) => cons(symbol, fun);
+const getSymbol = operation => car(operation);
+const getFun = operation => cdr(operation);
 
 const randOperation = () => {
   switch (randNumber(0, 2)) {
     case 0: {
-      return '+';
+      return makeOperation('+', (a, b) => a + b);
     }
     case 1: {
-      return '-';
+      return makeOperation('-', (a, b) => a - b);
     }
     case 2: {
-      return '*';
-    }
-    default: {
-      return null;
-    }
-  }
-};
-
-const correctAnswer = (argument1, argument2, operation) => {
-  switch (operation) {
-    case '+': {
-      return argument1 + argument2;
-    }
-    case '-': {
-      return argument1 - argument2;
-    }
-    case '*': {
-      return argument1 * argument2;
+      return makeOperation('*', (a, b) => a * b);
     }
     default: {
       return null;
@@ -46,8 +32,8 @@ const makeRound = () => {
   const argument2 = randNumber(minNumber, maxNumber);
   const operation = randOperation();
 
-  const question = `${argument1} ${operation} ${argument2}`;
-  const answer = String(correctAnswer(argument1, argument2, operation));
+  const question = `${argument1} ${getSymbol(operation)} ${argument2}`;
+  const answer = String(getFun(operation)(argument1, argument2));
 
   return cons(question, answer);
 };
@@ -56,5 +42,5 @@ const getQuestion = round => car(round);
 const getAnswer = round => cdr(round);
 
 export {
-  rules, makeRound, getQuestion, getAnswer,
+  description, makeRound, getQuestion, getAnswer,
 };
