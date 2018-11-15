@@ -1,11 +1,25 @@
 import { cons, car, cdr } from 'hexlet-pairs';
-import { isPrime, randNumber } from '../utils';
+import randNumber from '../utils';
 import runGame from '../runGame';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const minNumber = 1;
 const maxNumber = 1000;
+
+const isPrime = (n) => {
+  if (n <= 0) {
+    return false;
+  }
+
+  for (let i = 2; i <= n / 2; i += 1) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
 
 const makeRound = () => {
   const question = randNumber(minNumber, maxNumber);

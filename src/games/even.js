@@ -1,11 +1,13 @@
 import { cons, car, cdr } from 'hexlet-pairs';
-import { isEven, randNumber } from '../utils';
+import randNumber from '../utils';
 import runGame from '../runGame';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
 
 const minNumber = 1;
 const maxNumber = 100;
+
+const isEven = n => n % 2 === 0;
 
 const makeRound = () => {
   const question = randNumber(minNumber, maxNumber);

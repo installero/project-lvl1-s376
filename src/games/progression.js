@@ -1,27 +1,32 @@
 import { cons, car, cdr } from 'hexlet-pairs';
-import { randNumber } from '../utils';
+import randNumber from '../utils';
 import runGame from '../runGame';
-import { makeProgression, getNumberOnPosition, toString } from '../progression';
 
 const description = 'What number is missing in the progression?';
 
 const minStart = 0;
 const maxStart = 50;
+
 const minDifference = 1;
 const maxDifference = 10;
+
 const stepsCount = 10;
+
 const minPosition = 1;
 const maxPosition = 9;
 
 const makeRound = () => {
   const start = randNumber(minStart, maxStart);
-  const differnce = randNumber(minDifference, maxDifference);
+  const difference = randNumber(minDifference, maxDifference);
   const position = randNumber(minPosition, maxPosition);
 
-  const progression = makeProgression(start, differnce, stepsCount, position);
+  let question = '';
 
-  const question = toString(progression);
-  const answer = String(getNumberOnPosition(progression));
+  for (let i = 0; i < stepsCount; i += 1) {
+    question += (i === position) ? '.. ' : `${start + i * difference} `;
+  }
+
+  const answer = String(start + difference * position);
 
   return cons(question, answer);
 };
