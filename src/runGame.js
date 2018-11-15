@@ -4,9 +4,11 @@ const roundsCount = 3;
 
 const runGame = (game) => {
   console.log('Welcome to the Brain Games!');
+  console.log();
 
   const name = readlineSync.question('Please, enter your name: ');
   console.log(`Hello, ${name}!`);
+  console.log();
 
   console.log(game.rules);
 
