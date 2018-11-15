@@ -3,6 +3,10 @@ const isEven = n => n % 2 === 0;
 const randNumber = (n, m) => Math.floor(Math.random() * (m - n + 1) + n);
 
 const gcd = (n, m) => {
+  if (n === m) {
+    return n;
+  }
+
   const maxNumber = Math.floor(Math.max(n, m) / 2);
 
   for (let i = maxNumber; i > 1; i -= 1) {

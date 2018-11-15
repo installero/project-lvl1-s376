@@ -22,7 +22,7 @@ const runGame = (description, makeRound, getQuestion, getAnswer) => {
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. `
-            + `Correct answer was '${getAnswer(round)}'.)`);
+        + `Correct answer was '${getAnswer(round)}'.)`);
       return;
     }
   }

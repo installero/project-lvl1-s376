@@ -21,7 +21,7 @@ $ brain-games
 Welcome to the Brain Games!
 ```
 
-[![asciicast](https://asciinema.org/a/Z4ruvujhoGwCf9VO0BvxbQ9WX.svg)](https://asciinema.org/a/Z4ruvujhoGwCf9VO0BvxbQ9WX)
+[![asciicast](https://asciinema.org/a/Wlh2Q0J9WHMKhjSW3RN5dBVGM.svg)](https://asciinema.org/a/Wlh2Q0J9WHMKhjSW3RN5dBVGM)
 
 #### Часть 1
 
@@ -65,3 +65,8 @@ Welcome to the Brain Games!
 
 - [x] Добавлена игра brainGcd
 - [x] Новая версия пакета [опубликована](https://www.npmjs.com/package/hexlet_brain_games_installero/v/1.0.4)
+
+#### Часть 7
+
+- [x] Добавлена игра brainProgression
+- [x] Новая версия пакета [опубликована](https://www.npmjs.com/package/hexlet_brain_games_installero/v/1.0.8)
