@@ -1,5 +1,6 @@
 import { cons, car, cdr } from 'hexlet-pairs';
 import { isEven, randNumber } from '../utils';
+import runGame from '../runGame';
 
 const description = 'Answer "yes" if number even otherwise answer "no".';
 
@@ -16,6 +17,4 @@ const makeRound = () => {
 const getQuestion = round => car(round);
 const getAnswer = round => cdr(round);
 
-export {
-  description, makeRound, getQuestion, getAnswer,
-};
+export default () => runGame(description, makeRound, getQuestion, getAnswer);

@@ -1,5 +1,6 @@
 import { cons, car, cdr } from 'hexlet-pairs';
 import { randNumber } from '../utils';
+import runGame from '../runGame';
 
 const description = 'What is the result of the expression?';
 
@@ -41,6 +42,4 @@ const makeRound = () => {
 const getQuestion = round => car(round);
 const getAnswer = round => cdr(round);
 
-export {
-  description, makeRound, getQuestion, getAnswer,
-};
+export default () => runGame(description, makeRound, getQuestion, getAnswer);

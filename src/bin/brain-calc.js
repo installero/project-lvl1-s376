@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import runGame from '../runGame';
-import * as game from '../games/brainCalc';
+import runGame from '../games/brainCalc';
 
-runGame(game);
+runGame();
